@@ -28,3 +28,5 @@ Route::get('/', function () {
 */
 
 Route::get('/userInfo', 'UserInfoController@getInfo');
+
+Route::get('/producers', 'Producers@getInfo');

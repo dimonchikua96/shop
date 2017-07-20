@@ -27,6 +27,8 @@ Route::get('/', function () {
 |
 */
 
-Route::get('/userInfo', 'UserInfoController@getInfo');
+Route::get('userInfo', 'UserInfoController@getInfo');
 
-Route::get('/producers', 'Producers@getInfo');
+
+Route::get('producers', 'Producers@all');
+Route::get('producers/{id}', 'Producers@getInfo');

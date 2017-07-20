@@ -13,7 +13,8 @@ class CreateManufacturersTable extends Migration
      */
     public function up()
     {
-        Schema::create('manufacturer', function (Blueprint $table) {
+
+        Schema::create('manufacturers', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->timestamps();
@@ -27,6 +28,6 @@ class CreateManufacturersTable extends Migration
      */
     public function down()
     {
-        Schema::drop('manufacturer');
+        Schema::drop('manufacturers');
     }
 }

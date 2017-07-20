@@ -1,14 +1,17 @@
-<!doctype html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>App Name - @yield('title')</title>
+
+    <link rel=stylesheet type="text/css" href="/css/bootstrap/bootstrap.min.css">
+    <script type="text/javascript" src="/js/bootstrap/bootstrap.min.js"></script>
 </head>
 <body>
+@section('sidebar')
+    This is the master sidebar.
+@show
+
+<div class="container">
     @yield('content')
-    @yield('footer')
+</div>
 </body>
 </html>
